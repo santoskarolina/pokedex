@@ -1,0 +1,122 @@
+#pokemon__list{
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.pokemon__list--content{
+    height: 7rem;
+    border-radius: 0.4rem;
+    padding: 0.6rem 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.pokemon__list--content img{
+    cursor: pointer;
+    height: 9rem;
+    transition: .3s ease-in-out;
+}
+
+.pokemon__list--content img:hover{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.2);
+}
+
+.pokemon__list--content-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #fff
+}
+
+.pokemon__list--content-name h2{
+  margin: 0 !important;
+}
+
+.pokemon__list--content-photo{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pokemon__list--content-types{
+    display: flex;
+}
+.pokemon__list--content-type{
+  width: 4rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0;
+  color: #fff;
+  border-radius: 0.2rem;
+  margin-right: 0.4rem;
+}
+
+.normal {
+    background-color: var(--normal);
+  }
+  .fire {
+    background-color: var(--fire);
+  }
+	.water {
+    background-color: var(--water);
+  }
+	.electric {
+    background-color: var(--electric);
+  }
+	.grass {
+    background-color: var(--grass);
+  }
+	.ice {
+    background-color: var(--ice);
+  }
+	.fighting {
+    background-color: var(--fighting);
+  }
+	.poison {
+    background-color: var(--poison);
+  }
+	.ground {
+    background-color: var(--ground);
+  }
+	.flying {
+    background-color: var(--flying);
+  }
+	.psychic {
+    background-color: var(--psychic);
+  }
+	.bug {
+    background-color: var(--bug);
+  }
+	.rock {
+    background-color: var(--rock);
+  }
+	.ghost {
+    background-color: var(--ghost);
+  }
+	.dragon {
+    background-color: var(--dragon);
+  }
+	.dark {
+    background-color: var(--dark);
+  }
+	.steel {
+    background-color: var(-steel);
+  }
+	.fairy {
+    background-color: var(--fairy);
+  }
+
+  
+@media only screen and (max-width: 800px) {
+  #pokemon__list{
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}

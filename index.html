@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pokemon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <header>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/21.png" alt="" srcset="">
+        <h1>PokeDex</h1>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/39.png" alt="" srcset="">
+
+        <div class="search__box">
+            <img src="./assests/icon_search.png" alt="" srcset="" id="search__box">
+            <input type="text" placeholder="Nome do pokemon..." id="search__input" >
+            <div class="clear_icon"  id="clear_search" >x</div>
+        </div>
+
+    </header>
+
+    <section class="main">
+        <section class="main__container">
+            <div id="pokemon__list"></div>
+            <div class="pagination">
+                <button id="load__more_items">Carregar mais</button>
+            </div>
+        </section>
+    </section>
+    
+
+
+    <script src="./scripts/api.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
